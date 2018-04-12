@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Step 4 - final</title>
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+
+</head>
+<body>
+
+<table>
+  {% for i in range(0, image_count) %}
+    <tr>
+      <td><a href= "{{ image_folder }}/frame{{ i }}.jpg">frame{{ i }}</a></td>
+      <td>danger zone: x1={{x1}} x2={{x2}} y1={{y1}} y2={{y2}}</td>
+     </tr>
+   {% endfor %}
+</table>
+
+</body>
+</html>
+
+
